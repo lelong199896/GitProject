@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diem_trung_binh</title>
+</head>
+<body>
+    <script>
+        inputphysics = prompt("Enter the physics");
+        inputchemistry = prompt("Enter the chemistry");
+        inputbiology = prompt("Enter the biology");
+        var physics = parseInt(inputphysics);
+        var chemistry = parseInt(inputchemistry);
+        var biology = parseInt(inputbiology);
+        var tong = physics + chemistry + biology;
+        var tb = tong/3;
+       document.write("Tong diem la: " + tong);
+       document.write("<br/>");
+       document.write("Diem trung binh la: " + tb);
+    </script>
+</body>
+</html>
