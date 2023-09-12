@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc is-else-if</title>
+</head>
+<body>
+    <script>
+        let username = prompt('username');
+        if(username == 'admin'){
+            let password = prompt('password');
+            if(password == 'TheMaster'){
+                alert("Welcome");
+            } else if (password == 'null'){
+                alert("Canceld");
+            } else {
+                alert("Wrong password");
+            } 
+        } else {
+                alert("I don't know you");
+            }
+    </script>
+</body>
+</html>
