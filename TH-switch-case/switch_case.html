@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc switch-case</title>
+</head>
+<body>
+    <script>
+        let browser = prompt("enter browser name!");
+        switch (browser) {
+            case 'edge' :
+                alert("you've got the edge");
+                break;
+            case 'chrome' :
+            case 'firefox':
+            case 'safari':
+            case 'opera':
+                alert("okay we support these browsers too");
+                break;
+            default:
+                alert("we hope that this page looks ok!");
+        }
+    </script>
+</body>
+</html>
