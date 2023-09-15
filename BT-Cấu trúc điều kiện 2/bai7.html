@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương trình bậc 2</title>
+</head>
+<body>
+    <input type="number" id="a" placeholder="Nhập a">
+    <input type="number" id="b" placeholder="Nhập b">
+    <input type="number" id="c" placeholder="Nhập c">
+    <button onclick="ptbachai()">Kết quả</button>
+    <p id="result"></p>
+    <script>
+        function ptbachai() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            let c = +document.getElementById("c").value;
+            let delta = b*b-4*a*c;
+            let x = "";
+            let x1 = "";
+            let x2 = "";
+            let result = "";
+            if(delta < 0) {
+                result = "Phương trình vô nghiệm";
+            } else if(delta == 0) {
+                x = -b/2*a;
+                result = "Phương trình có nghiệm kép x = " + x;
+            } else {
+                x1 = (-b+Math.sqrt(delta))/(2*a);
+                x2 = (-b-Math.sqrt(delta))/(2*a);
+                result = "Phương trình có 2 nghiệm x1=" + x1 +" x2 = " + x2;
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính giá điện</title>
+  </head>
+  <body>
+    <h3>Lương điện tiêu thụ</h3>
+    <input type="number" id="electric" />
+    <button onclick="electric()">Check</button>
+    <p id="result"></p>
+    <script>
+      function electric() {
+        let a = +document.getElementById("electric").value;
+        let bac1 = 1678;
+        let bac2 = 1734;
+        let bac3 = 2014;
+        let bac4 = 2536;
+        let bac5 = 2834;
+        let bac6 = 2927;
+        let result;
+        if (a >= 0 && a <= 50) {
+          result = a * 1678;
+        } else if (a <= 100) {
+          result = 50 * bac1 + (a - 50) * bac2;
+        } else if (a <= 200) {
+          result = 50 * bac1 + 50 * bac2 + (a - 100) * bac3;
+        } else if (a <= 300) {
+          result = 50 * bac1 + 50 * bac2 + 100 * bac3 + (a - 200) * bac4;
+        } else if (a <= 400) {
+          result = 50 * bac1 + 50 * bac2 + 100 * bac3 + 100 * bac4 + (a - 300) * bac5;
+        } else {
+          result = 50 * bac1 + 50 * bac2 + 100 * bac3 + 100 * bac4 + 100 * bac5 + (a - 400) * bac6;
+        }
+        let b = result + (result*10)/100;
+        document.getElementById("result").innerHTML =
+          "Giá điện là: " + b + " VNĐ";
+      }
+    </script>
+  </body>
+</html>

@@ -6,56 +6,60 @@
     <title>Dangkihocvien</title>
   </head>
   <style>
-    input{
-        margin;
-    }
-    /* select{
-        margin-left: 90px;
-    } */
-    body{
-        background-color: bisque;
-    }
     h3{
         background-color: rgb(0, 183, 255);
+        padding: 0;
+    }
+
+    .container{
+      width: 400px;
+      background-color: bisque;
+      height: 380px;
+      margin:  auto;
+      padding-left:10px;
+      color: blue;
+
     }
   </style>
   <body>
-    <h3>ĐĂNG KÍ HỌC VIÊN</h3>
-    <h4>
-      Họ và tên
-      <input type="text" name="yourname" />
-    </h4>
-    <h4>
-      Ngày sinh
-      <input type="text" name="dateofbirth" />
-    </h4>
-    <h4>
-      Giới tính <input type="radio" name="gender" />Nam
-      <input type="radio" name="gender" />Nữ
-    </h4>
-    <h4>
-      Địa chỉ
-      <input type="text" name="adress" />
-    </h4>
-    <h4>
-      Lớp
-      <select name="class" id="">
-        <option value="Lop1">Lớp 1</option>
-        <option value="Lop2">Lớp 2</option>
-        <option value="Lop3">Lớp 3</option>
-        <option value="Lop4">Lớp 4</option>
-        <option value="Lop5">Lớp 5</option>
-      </select>
-    </h4>
-    <h4>
-      Email
-      <input type="text" name="email" />
-    </h4>
-    <h4>
-      Điện thoại
-      <input type="text" name="phone" />
-    </h4>
-    <input type="submit" name="submit" value="Đăng ký" />
-    <input type="reset" name="reset" value="Nhập lại" />
+    <div class="container">
+      <h3>ĐĂNG KÍ HỌC VIÊN</h3>
+      <h4>
+        Họ và tên
+        <input type="text" name="yourname" />
+      </h4>
+      <h4>
+        Ngày sinh
+        <input type="text" name="dateofbirth" />
+      </h4>
+      <h4>
+        Giới tính <input type="radio" name="gender" />Nam
+        <input type="radio" name="gender" />Nữ
+      </h4>
+      <h4>
+        Địa chỉ
+        <input type="text" name="adress" />
+      </h4>
+      <h4>
+        Lớp
+        <select name="class" id="">
+          <option value="Lop1">Lớp 1</option>
+          <option value="Lop2">Lớp 2</option>
+          <option value="Lop3">Lớp 3</option>
+          <option value="Lop4">Lớp 4</option>
+          <option value="Lop5">Lớp 5</option>
+        </select>
+      </h4>
+      <h4>
+        Email
+        <input type="text" name="email" />
+      </h4>
+      <h4>
+        Điện thoại
+        <input type="text" name="phone" />
+      </h4>
+      <input type="submit" name="submit" value="Đăng ký" />
+      <input type="reset" name="reset" value="Nhập lại" />
+    </div>
   </body>
 </html>
