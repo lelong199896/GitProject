@@ -13,9 +13,15 @@
     <input type="number" id="laisuat">
     <p>Số ngày gửi</p>
     <input type="number" id="ngaygui">
+    <button onclick="laisuat()">Kiểm tra</button>
+    <p id="result"></p>
     <script>
         function laisuat() {
-            let gui = document.getElementById("gui").value
+            let gui = document.getElementById("gui").value;
+            let lai = document.getElementById("laisuat").value;
+            let ngaygui = document.getElementById("ngaygui").value;
+            let result = gui * lai / 100 / 365 * ngaygui;
+            document.getElementById("result").innerHTML = "Số tiền lãi: " + result;
         }
     </script>
 </body>
