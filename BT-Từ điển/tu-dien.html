@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Từ điển</title>
+  </head>
+  <body>
+    <p>Nhập từ:</p>
+    <input type="text" id="fruit" />
+    <button onclick="dich()">Dịch</button>
+    <p id="result"></p>
+    <script>
+      function dich() {
+        let fruitEng = ["apple", "banana", "orange"];
+        let fruitVie = ["táo", "chuối", "cam"];
+        let nhap = document.getElementById("fruit").value;
+        let index = fruitEng.indexOf(nhap);
+        if (index == -1) {
+          document.getElementById("result").innerHTML = "Không tìm thấy";
+        } else {
+          document.getElementById("result").innerHTML = "Nghĩa của từ " + nhap + ": " + fruitVie[index];
+        }
+      }
+    </script>
+  </body>
+</html>
