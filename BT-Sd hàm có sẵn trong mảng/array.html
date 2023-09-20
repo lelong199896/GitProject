@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Nối các phần tử
+      let myColor = ["Red", "Green", "White", "Black"];
+      document.write(myColor.toString());
+
+      //Chèn dấu - giũa hai số chẵn
+      let num = window.prompt();
+      let str = num.toString();
+      let result = [str[0]];
+
+      for (let x = 1; x < str.length; x++) {
+        if (str[x - 1] % 2 === 0 && str[x] % 2 === 0) {
+          result.push("-", str[x]);
+        } else {
+          result.push(str[x]);
+        }
+      }
+      document.write(result.join(""));
+
+      //Chuyển kí tự thường trong chuỗi thành dạng chữ hoa
+      var string = "cfsdgJHKBsjs";
+      var UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      var LOWER = "abcdefghijklmnopqrstuvwxyz";
+      var arr = [];
+
+      for (var x = 0; x < string.length; x++) {
+        if (UPPER.indexOf(string[x]) !== -1) {
+          arr.push(string[x].toLowerCase());
+        } else if (LOWER.indexOf(string[x]) !== -1) {
+          arr.push(string[x].toUpperCase());
+        } else {
+          arr.push(string[x]);
+        }
+      }
+      document.write(arr.join(""));
+    </script>
+  </body>
+</html>
