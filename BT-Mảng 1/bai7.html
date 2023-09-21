@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = [1, 23, 12, 4, 35, 5, 6, 15, 9, 11];
+      let v = +prompt("Nhập số nguyên V");
+      let check = x.indexOf(v);
+      if (check == -1) {
+        alert("V is not in the array");
+      } else {
+        x.splice(check, 1);
+        x.push(0);
+        document.write("Mảng sau khi xóa là: [" + x + "]");
+      }
+    </script>
+  </body>
+</html>
