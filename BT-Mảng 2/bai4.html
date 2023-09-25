@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
+</head>
+<body>
     <script>
       let arr = [];
       let nhap;
-      let arrReverse;
-      while (nhap != "") {
+        while (nhap != "") {
         nhap = prompt("Nhập phần tử mảng và Enter để kết thúc");
         if (nhap != "") {
           arr.push(nhap);
@@ -18,9 +17,9 @@
           alert("Kết thúc nhập phần tử mảng");
         }
       }
+      let a = arr.join("");
       document.write("Mảng đã nhập: [" + arr + "]<br>");
-      arrReverse = arr.reverse();
-      document.write("Mảng đảo ngược: [" + arrReverse + "]");
+      document.write("Số từ trong chuỗi: " + a.length);
     </script>
-  </body>
+</body>
 </html>

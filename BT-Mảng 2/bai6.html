@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = prompt("Nhập chuỗi");
+      let replaceInput = prompt("Thay thế chữ");
+      let replaceWith = prompt("Thay thế bằng chữ");
+      let inputReplaceArray;
+
+      document.write("Chuỗi đã nhập: [" + input + "]<br>");
+      inputReplaceArray = input.replaceAll(replaceInput, replaceWith);
+      document.write("Chuỗi thay đổi: [" + inputReplaceArray + "]");
+      // let array = ["aa", "bb", "cc"];
+      // for (let i = 0; i < array.length; i++) {
+      //   for (let j = 0; j < array[i].length; j++) {
+      //     array[i] = array[i].replace(replaceInput, replaceWith);
+      //   }
+      // }
+    </script>
+  </body>
+</html>

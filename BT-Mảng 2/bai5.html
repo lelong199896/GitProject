@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr1 = [];
+      let arr2 = [];
+      let nhap1;
+      let nhap2;
+      let count = 0;
+      while (nhap1 != "") {
+        nhap1 = prompt("Nhập phần tử mảng 1 và Enter để kết thúc");
+        if (nhap1 != "") {
+          arr1.push(nhap1);
+        } else {
+        alert("Kết thúc nhập phần tử mảng");
+        }
+      }
+      document.write("Array1 = [" + arr1 + "]<br>");
+
+      while (nhap2 != "") {
+        nhap2 = prompt("Nhập phần tử mảng 2 và Enter để kết thúc");
+        if (nhap2 != "") {
+          arr2.push(nhap2);
+        } else {
+        alert("Kết thúc nhập phần tử mảng");
+        }
+      }
+      document.write("Array2 = [" + arr2 + "]<br>");
+      for (let i = 0;i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if (arr1[i] == arr2[j]) {
+                count += 1;
+            }
+        }
+      }
+      document.write("2 mảng có " + count + " phần tử giống nhau");
+    </script>
+  </body>
+</html>
