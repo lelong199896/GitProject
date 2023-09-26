@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let r = +prompt("Nhập bán kính:")
+        function circleArea() {
+            return r * r * Math.PI;
+        }
+        function diameterOfCircle() {
+            return r * 2 * Math.PI;
+        }
+        document.write("Diện tích hình tròn là: " + circleArea(r) + "<br>");
+        document.write("Chu vi hình tròn là: " + diameterOfCircle(r));
+    </script>
+</body>
+</html>

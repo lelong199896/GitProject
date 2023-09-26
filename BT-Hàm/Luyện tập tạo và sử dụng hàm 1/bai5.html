@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = prompt("Nhập tên ngôi sao");
+      let star1 = [
+        "Polaris",
+        "Aldebaran",
+        "Deneb",
+        "Vega",
+        "Altair",
+        "Dubhe",
+        "Regulus",
+      ];
+      let star2 = [
+        "Ursa Minor",
+        "Tarurus",
+        "Cygnus",
+        "Lyra",
+        "Aquila",
+        "Ursa Major",
+        "Leo",
+      ];
+      function star() {
+        for (i = 0; i < star1.length; i++) {
+          if (input === star1[i]) {
+            return i;
+          }
+        }
+      }
+      if (star() == i) {
+        alert("Chòm sao của " + star1[i] + " là: " + star2[i]);
+      } else {
+        alert("Không tìm thấy ngôi sao");
+      }
+    </script>
+  </body>
+</html>
