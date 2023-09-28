@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng lớp mô tả điện thoại</title>
+</head>
+<body>
+    <script>
+        class Mobile {
+            constructor(id,name) {
+                this.id = id;
+                this.name = name;
+                this.message = "";
+            }
+            setMessage(message) {
+                this.message = message;
+            }
+            getMessage() {
+                return this.message;
+            }
+            sendMessage(message,mobile) {
+                mobile.setMessage(message);
+            }
+        }
+        let ios = new Mobile(1, "iphone");
+        let android = new Mobile(2, "samsung");
+        ios.sendMessage("From iphone: hi",android);
+        let message = android.getMessage();
+        document.write(message);
+        document.write("<br>");
+        android.sendMessage("From samsung: hello",ios);
+        let message1 = ios.getMessage();
+        document.write(message1);
+    </script>
+</body>
+</html>

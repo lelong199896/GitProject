@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xây dựng lớp mô tả Temperature</title>
+  </head>
+  <body>
+    <script>
+        class Temperature {
+          constructor(Celsius) {
+            this.Celsius = Celsius;
+          }
+          celsiusToKelvins() {
+            return this.Celsius + 273;
+          }
+          celsiusToFahrenheit() {
+            return this.Celsius * 1.8 +32;
+          }
+        }
+        let temperature = new Temperature(25);
+        let fahrenheit = temperature.celsiusToKelvins();
+        document.write("C to K: " + fahrenheit);
+        document.write("<br>");
+        let kelvins = temperature.celsiusToFahrenheit();
+        document.write("C to F: " + kelvins);
+    </script>
+  </body>
+</html>
